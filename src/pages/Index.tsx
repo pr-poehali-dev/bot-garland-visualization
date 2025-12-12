@@ -47,7 +47,7 @@ export default function Index() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button
               size="lg"
-              className="text-lg px-8 py-6 font-semibold hover-scale bg-primary hover:bg-primary/90"
+              className="text-lg px-8 py-6 font-semibold hover-scale bg-primary hover:bg-primary/90 text-white"
               onClick={() => window.open('https://t.me/YOUR_BOT', '_blank')}
             >
               <Icon name="Bot" size={24} className="mr-2" />
@@ -71,6 +71,43 @@ export default function Index() {
               <Icon name="Gift" size={16} className="text-primary" />
               <span>15 генераций бесплатно</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="container mx-auto px-4 py-16" id="examples">
+        <h2 className="font-heading font-bold text-3xl md:text-5xl text-center mb-4">
+          Примеры работы бота
+        </h2>
+        <p className="text-center text-gray-400 mb-12">До и после — результат за 30 секунд</p>
+        
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 mb-16">
+          <div className="relative group">
+            <div className="absolute -top-3 left-4 bg-gray-600 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
+              ДО
+            </div>
+            <div className="overflow-hidden rounded-2xl border-2 border-white/10 hover-scale">
+              <img 
+                src="https://cdn.poehali.dev/projects/28945af4-581d-427b-9c67-664f147722fb/files/8dacc478-743e-4187-951b-495a09b278da.jpg" 
+                alt="Дом без гирлянд" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <p className="text-center text-sm text-gray-400 mt-3">Обычное фото объекта</p>
+          </div>
+          
+          <div className="relative group">
+            <div className="absolute -top-3 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full z-10">
+              ПОСЛЕ
+            </div>
+            <div className="overflow-hidden rounded-2xl border-2 border-primary/50 hover-scale">
+              <img 
+                src="https://cdn.poehali.dev/projects/28945af4-581d-427b-9c67-664f147722fb/files/1e9f1d09-f30e-432f-acec-6b1fcd54897d.jpg" 
+                alt="Дом с гирляндами" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <p className="text-center text-sm text-primary font-semibold mt-3">ИИ-визуализация за 25₽</p>
           </div>
         </div>
       </section>
@@ -158,7 +195,7 @@ export default function Index() {
               </li>
             </ul>
             <Button
-              className="w-full bg-primary hover:bg-primary/90 font-semibold"
+              className="w-full bg-primary hover:bg-primary/90 font-semibold text-white"
               size="lg"
               onClick={() => window.open('https://t.me/YOUR_BOT', '_blank')}
             >
@@ -194,7 +231,7 @@ export default function Index() {
               </li>
             </ul>
             <Button
-              className="w-full bg-primary hover:bg-primary/90 font-semibold"
+              className="w-full bg-primary hover:bg-primary/90 font-semibold text-white"
               size="lg"
               onClick={() => window.open('https://t.me/YOUR_BOT', '_blank')}
             >
@@ -249,7 +286,7 @@ export default function Index() {
               
               <Button
                 type="submit"
-                className="w-full bg-primary hover:bg-primary/90 font-semibold"
+                className="w-full bg-primary hover:bg-primary/90 font-semibold text-white"
                 size="lg"
               >
                 <Icon name="Send" size={20} className="mr-2" />
